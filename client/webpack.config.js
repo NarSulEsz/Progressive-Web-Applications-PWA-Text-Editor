@@ -27,9 +27,9 @@ module.exports = () => {
         swDest: 'src-sw.js', // Output service worker file in the dist folder
       }),
       new WebpackPwaManifest({
-        name: 'Your App Name',
-        short_name: 'App',
-        description: 'Your app description',
+        name: 'Just Another Text Editor',
+        short_name: 'JATE',
+        description: 'Takes notes',
         background_color: '#ffffff',
         theme_color: '#000000',
         display: 'standalone',
@@ -37,9 +37,9 @@ module.exports = () => {
         publicPath: '/',
         icons: [
           {
-            src: path.resolve('src/images/icon.png'), // Path to app icon
+            src: path.resolve('src/images/logo.png'), // Path to app icon
             sizes: [96, 128, 192, 256, 384, 512], // Different sizes
-            destination: path.join('icons'),
+            destination: path.join('assets','icons'),
           },
         ],
       }),
