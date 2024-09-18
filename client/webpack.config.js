@@ -24,7 +24,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src/src-sw.js', // Path to custom service worker file
-        swDest: 'src-sw.js', // Output service worker file in the dist folder
+        swDest: 'service-worker.js', // Output service worker file in the dist folder
       }),
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
